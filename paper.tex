@@ -1,0 +1,124 @@
+\documentclass[10pt,letter]{article}
+
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{amssymb}
+% packages that allow mathematical formatting
+
+\usepackage{graphicx}
+% package that allows you to include graphics
+
+\usepackage{setspace}
+% package that allows you to change spacing
+
+\usepackage{cite}
+% for BibTeX
+
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+
+\usepackage[sc,osf]{mathpazo}
+\linespread{1.05}         % Palatino needs more leading
+\usepackage[T1]{fontenc}
+
+\fontencoding{T1}
+\fontfamily{ppl}
+\fontseries{m}
+\fontshape{n}
+\fontsize{10}{13}
+% Set font size. The first parameter is the font size to switch to; the second
+% is the \baselineskip to use. The unit of both parameters defaults to pt. A
+% rule of thumb is that the baselineskip should be 1.2 times the font size.
+\selectfont
+
+\usepackage{parskip}
+% Use the style of having no indentation with a space between paragraphs.
+
+\usepackage{enumitem}
+% Resume an enumerated list, continuing the old numbering, after some
+% intervening text.
+
+% \usepackage{fullpage}
+% package that specifies normal margins
+
+\usepackage{titling}
+% move the title up a bit, wastes less space
+\setlength{\droptitle}{-5em}
+
+\usepackage{caption}
+\usepackage{subcaption}
+% for subfigures
+
+\usepackage[usenames,dvipsnames]{color}
+% for \color used in listings
+\usepackage{textcomp}
+% for upquote used in listings
+\usepackage{listings}
+\lstset{
+    breakatwhitespace, % somehow prevents lstinline from line splitting
+    tabsize=2,
+    rulecolor=,
+    basicstyle=\footnotesize,
+    upquote=true,
+    aboveskip={1.5\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=single,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color{Purple},
+    identifierstyle=\color{Black},
+    commentstyle=\color{BrickRed},
+    stringstyle=\color{RubineRed},
+    captionpos=b,
+}
+\lstloadlanguages{erlang}
+\lstset{language=erlang}
+
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{fit}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.misc} % for cross shaped nodes
+
+\pgfdeclarelayer{b}
+\pgfdeclarelayer{f}
+\pgfsetlayers{b,main,f}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Macros
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{FACC: Flow Analyzing Compiler Compiler}
+\author{Daniel King \and Olin Shivers}
+% \date{}
+
+\maketitle
+
+% Abstract here
+
+\section{Introduction}
+
+
+\section{Implementation}
+
+
+\section{Evaluation}
+
+
+\section{Future Work}
+
+
+\section{Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{paper}
+
+\end{document}
